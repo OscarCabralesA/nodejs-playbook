@@ -53,14 +53,26 @@ const user = {
     ],
     media: [{author: this.username, id: 123231,}],
     likes: [{ author: "carlogilmar", id: 11232 }, { author: "mariana22lopez", id: 11132 }],
-    follow: function(follower) {
-        if (!this.followers.includes(follower.username)) {
-            this.followers.push(follower)
+    addFollower: function(user_id) {
+        if (!this.followers.includes(user_id)) {
+            this.followers.push(user_id)
         }
     }, 
-    unfollow: function(unfollower) {
-        if (this.followers.includes(this.unfollower.username)) {
-            this.followers.pop(unfollower)
+    addFollowing: function (user_id) {
+        if (!this.following.includes(user_id)) {
+            this.following.push(user_id)
+        }
+    },
+    removeFollower: function(user_id) {
+        var fllwr = this.followers.indexOf(user_id)
+        if (fllwr > -1) {
+            this.followers = this.followers.splice(fllwr, 1)
+        }
+    }, 
+    removeFollowing: function(user_id) {
+        var fllwg = this.following.indexOf(user_id)
+        if (fllwg > -1) {
+            this.following = this.following.splice(fllwg, 1)
         }
     },
     tweet: function(tweet){
