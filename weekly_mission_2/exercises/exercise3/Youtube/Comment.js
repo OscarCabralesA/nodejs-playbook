@@ -13,3 +13,5 @@ class Comment {
         this.dislikes += 1
     }
 }
+
+module.exports.default = Comment

@@ -1,10 +1,11 @@
+const { v4: uuidv4 } = require('uuid')
 class Video {
     constructor(video, title, channelId, description) {
+        this.id = uuidv4()
         this.video = video
         this.title = title
         this.channelId = channelId
         this.description = description
-        this.id = "000000"
         this.channelId = channelId
         this.uploadDate = new Date()
         this.views = 0
@@ -23,3 +24,5 @@ class Video {
         this.dislikes += 1
     }
 }
+
+module.exports.default = Video
