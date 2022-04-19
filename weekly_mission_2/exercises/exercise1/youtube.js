@@ -22,7 +22,7 @@ const video = {
                 this.likes += 1
             },
             dislike: function () {
-                this.dislikes -= 1
+                this.dislikes += 1
             }
         }
     ],
