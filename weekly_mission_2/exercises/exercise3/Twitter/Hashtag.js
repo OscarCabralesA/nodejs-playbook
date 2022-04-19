@@ -4,3 +4,5 @@ class Hashtag {
         this.keyword = keyword
     }
 }
+
+module.exports.default = Hashtag

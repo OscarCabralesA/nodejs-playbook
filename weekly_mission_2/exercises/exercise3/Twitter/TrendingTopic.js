@@ -13,3 +13,5 @@ class TrendingTopic {
         this.tweets -= 1
     }
 }
+
+module.exports.default = TrendingTopic

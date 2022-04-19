@@ -48,3 +48,5 @@ class User {
         this.tweets.push(tweet)
     }
 }
+
+module.exports.default = User

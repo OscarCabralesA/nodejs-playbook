@@ -1,9 +1,10 @@
+const { v4:uuidv4 } = require('uuid')
 class Tweet {
     constructor (author, text, content) {
+        this.id = uuidv4()
         this.author = author
         this.text = text
         this.content = content
-        this.id = "00000"
         this.date = new Date()
         this.retweets = []
         this.quoteTweets = []
@@ -37,3 +38,5 @@ class Tweet {
         this.likes.push(user_id)
     }
 }
+
+module.exports.default = Tweet
