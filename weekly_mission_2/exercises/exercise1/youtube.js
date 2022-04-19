@@ -15,9 +15,6 @@ const video = {
             text: "Me: Why do you recommend me this?\nYoutube: Cuz your music taste is good.", 
             likes: 6030, 
             dislikes: 0, 
-            reply: function (comment) {
-                this.comments.push(comment)
-            },
             like: function () {
                 this.likes += 1
             },
