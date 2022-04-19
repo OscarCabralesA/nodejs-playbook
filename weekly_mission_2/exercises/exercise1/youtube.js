@@ -84,7 +84,7 @@ const channel = {
     deleteVideo: function (video_id) {
         var vid = this.videos.indexOf(video_id)
         if (vid > -1) {
-            this.videos.splice(vid, 1)
+            this.videos = this.videos.splice(vid, 1)
         }
     }, 
     addPlaylist: function (playList) {
