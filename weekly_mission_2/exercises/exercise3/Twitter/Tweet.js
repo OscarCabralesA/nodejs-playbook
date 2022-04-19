@@ -11,6 +11,22 @@ class Tweet {
         this.likes = []
     }
 
+    get numberOfRetweets() {
+        return this.retweets.length
+    }
+
+    get numberOfQuoteTweets() {
+        return this.quoteTweets.length
+    }
+
+    get numberOfComments() {
+        return this.comments.length
+    }
+
+    get numberOfLikes() {
+        return this.likes.length
+    }
+
     quoteTweet(tweet_id) {
         this.quoteTweets.push(tweet_id)
     }
