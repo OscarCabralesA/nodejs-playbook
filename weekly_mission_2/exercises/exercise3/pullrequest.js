@@ -8,11 +8,7 @@ class PullRequest {
         this.status = "OPEN"
     }
 
-    get getStatus() {
-        return this.status
-    }
-
-    getTitleAndAuthor() {
+    get titleAndAuthor() {
         return `Title: ${this.title}, Author: ${this.author}`
     }
 }
@@ -20,5 +16,5 @@ class PullRequest {
 const pullRequest = new PullRequest("Bug fixed", "oscarc", "main", "MissionNodeJS")
 console.log("--Pull Request--")
 console.log(pullRequest)
-console.log("\nStatus: " + pullRequest.getStatus)
-console.log("\nTítulo y autor: " + pullRequest.getTitleAndAuthor())
+console.log("\nStatus: " + pullRequest.status)
+console.log("\nTítulo y autor: " + pullRequest.titleAndAuthor)
