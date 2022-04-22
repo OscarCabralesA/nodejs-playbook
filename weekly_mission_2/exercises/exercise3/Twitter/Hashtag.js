@@ -5,4 +5,4 @@ class Hashtag {
     }
 }
 
-module.exports.default = Hashtag
+module.exports = Hashtag

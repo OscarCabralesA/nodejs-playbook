@@ -14,4 +14,4 @@ class TrendingTopic {
     }
 }
 
-module.exports.default = TrendingTopic
+module.exports = TrendingTopic

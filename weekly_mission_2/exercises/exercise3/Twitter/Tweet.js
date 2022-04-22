@@ -39,4 +39,4 @@ class Tweet {
     }
 }
 
-module.exports.default = Tweet
+module.exports = Tweet
