@@ -21,4 +21,4 @@ class PlayList {
     }
 }
 
-module.exports.default = PlayList
+module.exports = PlayList

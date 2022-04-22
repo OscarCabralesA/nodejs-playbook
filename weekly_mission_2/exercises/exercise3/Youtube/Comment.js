@@ -14,4 +14,4 @@ class Comment {
     }
 }
 
-module.exports.default = Comment
+module.exports = Comment

@@ -42,4 +42,4 @@ class Channel {
     }
 }
 
-module.exports.default = Channel
+module.exports = Channel

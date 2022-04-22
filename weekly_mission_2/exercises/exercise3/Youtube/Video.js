@@ -25,4 +25,4 @@ class Video {
     }
 }
 
-module.exports.default = Video
+module.exports = Video

@@ -20,4 +20,4 @@ class About {
     }
 }
 
-module.exports.default = About
+module.exports = About
