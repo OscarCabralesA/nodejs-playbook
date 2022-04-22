@@ -9,4 +9,4 @@ class Travel {
     }
 }
 
-module.exports.default = Travel
+module.exports = Travel
