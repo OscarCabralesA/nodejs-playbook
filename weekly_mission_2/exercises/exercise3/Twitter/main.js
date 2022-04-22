@@ -1,0 +1,25 @@
+const Tweet = require('./Tweet')
+const TwitterUser = require('./User')
+const Hashtag = require('./Hashtag')
+const TrendingTopic = require('./TrendingTopic')
+
+console.log("-Twitter model-")
+console.log(">> User")
+user = new TwitterUser("Oscar", "oscar_ca", "bio")
+user.addFollower("romarpla")
+console.log(user)
+
+console.log(">> Tweet")
+tweet = new Tweet("osacar_ca", "This is a tweet", "blue_bird.png")
+user.tweet(tweet)
+tweet.like("romarpla")
+console.log(tweet)
+
+console.log(">> Hashtag")
+hashtag = new Hashtag("pokemon")
+console.log(hashtag.prefix + hashtag.keyword)
+
+console.log(">> TrendingTopic")
+trendingTopic = new TrendingTopic(hashtag, "videogames")
+trendingTopic.addTweet()
+console.log(trendingTopic)
